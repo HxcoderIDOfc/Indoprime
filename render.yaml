@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: primeaibot
+    env: node
+    branch: main
+    buildCommand: npm install
+    startCommand: node index.js
+    autoDeploy: true
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+    routes:
+      - type: rewrite
+        source: /file/(.*)
+        destination: /file/$1
+      - type: rewrite
+        source: /views/(.*)
+        destination: /views/$1

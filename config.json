@@ -1,0 +1,12 @@
+{
+  "ownerNumber": "6283148450932",
+  "ownerName": "Indoprime",
+  "botName": "PrimeAiBot",
+  "sessionName": "session",
+  "prefix": "",
+  "port": 3000,
+  "apikeys": {
+    "indoprimeDataKey": "apikey-mysql-data-INDO123",
+    "brandingKey": "ind0pr1me-authz-✔️"
+  }
+}
